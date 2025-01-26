@@ -1,19 +1,19 @@
 function checkAnswer() {
-    const feedback = document.getElementById("feedback");
-  
-    const correctAnswer = "4";
-  
-    const userAnswer = document.querySelector(
-      'input[name="quiz"]:checked'
-    )?.value;
-  
-    if (userAnswer === correctAnswer) {
-      feedback.textContent = "Correct! Well done.";
-    } else {
-      feedback.textContent = "That's incorrect. Try again!";
+    const correctAnswer = 4;
+
+    const userAnswer = document.querySelector('input[name="quiz"]:checked').value;
+
+    const feedBack = document.getElementById("feedback");
+    if (userAnswer === correctAnswer)
+    {
+        feedBack.textContent = "Correct! Well done.";
     }
-  }
-  
-  const btnEl = document.getElementById("submit-answer");
-  
-  btnEl.addEventListener("click", checkAnswer);
+    else
+    {
+        feedBack.textContent = "That's incorrect. Try again!";
+    }
+
+}
+
+const submitButton = document.getElementById("submit-answer");
+submitButton.addEventListener("click", checkAnswer);

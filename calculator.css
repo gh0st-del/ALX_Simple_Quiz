@@ -5,27 +5,27 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
-  
-  #calculator-container {
+}
+
+#calculator-container {
     text-align: center;
-  }
-  
-  input[type="number"] {
+}
+
+input[type="number"] {
     margin: 10px;
     padding: 10px;
     width: 200px;
     font-size: 16px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     margin: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  #result {
+}
+
+#result {
     margin-top: 20px;
     font-size: 20px;
-  }
+}
